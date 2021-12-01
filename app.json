@@ -1,0 +1,26 @@
+{
+  "id": "6d6df948-4a2b-40c2-b6f2-0488f74c5779",
+  "name": "DANVA_KONV",
+  "publisher": "ITBASEN",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "LOGO/ERPgruppen-logo_ext.jpg",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 71000
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://DANVA_KONV.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0"
+}
