@@ -20,7 +20,7 @@ pageextension 50149 Comp_Div_HBK_ERPG extends "Company Information"
                 PromotedIsBig = true;
                 Image = UnitConversions;
                 RunObject = report "Multi C5 Import";
-                ApplicationArea = All;
+                ApplicationArea = All;//
             }
         }
         */
