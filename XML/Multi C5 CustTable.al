@@ -105,10 +105,13 @@ xmlport 70005 "Multi C5 CustTable"
                         end;
                         CustTable."Gen. Bus. Posting Group" := Group;
                         CustTable."VAT Bus. Posting Group" := 'INDENLANDS';
+
+                        /* 060722
                         if Group = '02' then
                             CustTable."VAT Bus. Posting Group" := 'EU';
                         if Group = '03' then
                             CustTable."VAT Bus. Posting Group" := 'UDLAND';
+                         060722 */
 
 
                         CustTable."Customer Posting Group" := Group;
@@ -202,7 +205,7 @@ xmlport 70005 "Multi C5 CustTable"
                             '2':
                                 CustTable.Blocked := CustTable.Blocked::All;
                             '3':
-                                CustTable.Blocked := CustTable.Blocked::Ship;
+                                CustTable.Blocked := CustTable.Blocked::All;
                         end;
                     end;
                 }

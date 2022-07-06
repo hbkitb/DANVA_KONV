@@ -185,7 +185,7 @@ xmlport 70009 "Multi C5 VendTable"
                             '2':
                                 VendTable.Blocked := VendTable.Blocked::All;
                             '3':
-                                VendTable.Blocked := VendTable.Blocked::Payment;
+                                VendTable.Blocked := VendTable.Blocked::All;
                         end;
                     end;
                 }
