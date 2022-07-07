@@ -135,8 +135,18 @@ xmlport 50151 "50151_Imp_FinKart"
 
     local procedure GenPostSetupImp()
     begin
-        if StrLen(Felt01) < 4 then
-            felt01 := '0' + Felt01;
+
+        case StrLen(Felt01) of
+            3:
+                Felt01 := '000' + Felt01;
+            4:
+                Felt01 := '00' + Felt01;
+            5:
+                Felt01 := '0' + Felt01;
+        end;
+
+        //070722 if StrLen(Felt01) < 4 then
+        //070722    felt01 := '0' + Felt01;
         FinKart.RESET;
         FinKart.SetRange("No.", Felt01);
         //250718 GenPostSetup.SETRANGE("Gen. Bus. Posting Group",Felt01);
